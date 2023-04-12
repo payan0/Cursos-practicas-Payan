@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejer2</h1>
+
+    <script>
+        /*
+        let comida = "Costillas a la BBQ";
+        let comida2 = "Hamburguesa";
+
+        console.log(comida, comida2);
+
+        let micomida = "Lo que voy a comer es " + comida + " " + comida2 + ".";
+        console.log(micomida);
+
+        let micomida2 = `Lo que voy a comer es ${comida} ${comida2}`;
+        console.log(micomida2);
+
+        a = 5;
+        b = 5;
+        c = "6";
+
+        console.log(a + b);
+        console.log(a + parseInt(c));
+        */
+        //Funciones
+
+        //Declaradas
+
+        /*
+        funcionDeclar();
+
+        function funcionDeclar () {
+            console.log("Esto es una funcion declarada")
+        };
+
+        funcionDeclar();
+
+        const expresada = function () {
+            console.log("expresada")
+        }
+
+        expresada()
+
+        function saludo (nombre = "Payan", edad = 24, altura = 1.65) 
+        {
+            console.log(`Hola, mi nombres ${nombre} tengo ${edad} y mido ${altura}.`)
+
+        }
+
+        saludo("Payan", 24, 1.65); 
+        saludo();
+
+        //Funcion declara valor
+
+        function deVuelveValor () {
+            console.log("A");
+            console.log("B");
+            console.log("C");
+            console.log("D");
+            return ("Devuelveme este valor... ¡YA!")
+        } 
+        deVuelveValor();
+        let devuelve = deVuelveValor();
+
+        console.log("devuelve");
+        */
+        /*
+        let menu = "El menu se presenta aquí:";
+        console.log(menu);
+        comida();
+        function comida () {
+            console.log("hamburguesa", 60, "pesos");
+            console.log("hotdogs", 30, "pesos");
+            console.log("Costillas", 220, "pesos");
+        }
+        let menu2 = "el menu de postres:"
+        console.log(menu2);
+        let postre = function () {
+            console.log("chocolate");
+            console.log("Helado");
+            console.log("chocolate");
+        }
+
+        postre();
+
+        const menuDelDia = function (comida1 = "Hamburguesa", precio = 64) {
+            console.log(`Hoy tenemos para ofrecerles: ${comida1} = ${precio}`);
+        }
+
+        menuDelDia();
+
+        function regresar () {
+            console.log("pistolas");
+            console.log("placas");
+            return "Regresar estas herramientas"
+        }
+
+        regresar();
+
+    let regreso = regresar();
+
+    console.log(regreso);
+
+    function saluda (nombre = "Payan", edad = 24) {
+        console.log("Hey, soy " + nombre + " " + "y tengo " + edad + ".");
+    }
+
+    saluda();
+
+    function lol () {
+    console.log("Perros");
+    console.log("Gatos");
+   }
+
+   lol();
+
+  let perros = function (perro1 = "Figaro", perro2 = "Cesamo", perro3 = "Lilin") {
+    console.log(`Si, tengo tres perros, y se llaman: ${perro1}, ${perro2} y ${perro3}.`);
+  }
+
+  perros()
+*/
+
+//Arrays (Arreglos)
+
+/*
+  
+let gatos = ["Garfield","Felix","Sonrisa"];
+console.log(gatos);
+gatos.push("The Cat")
+
+console.log(gatos);
+
+gatos.forEach(function (el,index) {console.log(`<li id="${index}">${el}</li>`)});
+
+*/
+
+//Objets (Objetos)
+/*
+const miComidaFavorita = {comida1: "Costillas a la BBQ", comida2: "Hamburguesa", comida3: "Tacos", comida4: "dulces", pasatiempos: ["caminar","jugar","programar"], nombre: "Sebastián", social: {Facebook: "Ojeda Sebastian", telefono: "5580148547"}, miSaludo:function () {console.log("Hey")}, yo:function() {console.log(`Hey, mi nombre es ${this.nombre}, y me encantan: ${this.comida1}, ${this.comida2} y los ${this.comida3}`)}}
+
+console.log(miComidaFavorita);
+miComidaFavorita.miSaludo();
+miComidaFavorita.yo();
+console.log(miComidaFavorita.comida1);
+*/
+//Arreglo
+/*
+const jiji = ["Verano","Otoño","Invierno",true,false,["A","E","I","O","U",[1,2,3,4]],12];
+console.log(jiji);
+console.log(jiji[1]);
+console.log(jiji[5][0]);
+console.log(jiji[5][5][0]);
+
+const frutas = ["platanos","Melones","uvas"]
+console.log(frutas);
+frutas.push("Peras");
+console.log(frutas);
+frutas.pop();
+console.log(frutas);
+
+frutas.forEach(function (el,index) {console.log(`<ul id="${index}">${el}</ul>`)});
+
+function regre () {
+    console.log("XD")
+    return("Regresame esto")
+}
+regre();
+let regresa = regre();
+console.log(regresa);
+
+const expresiva = function () {
+    console.log("Adios")
+    return("Devuelve ahora esto")
+}
+expresiva();
+let deuvleveEnExpresiva = expresiva();
+console.log(deuvleveEnExpresiva);
+
+*/
+
+//Random
+/*
+let objs = {Salsa: "BBQ", Carne: "Costillas", Cuantas: 2, numeros: [1,2,3,4,5],funcion: function () {console.log("Hey")},dulces: {dulce1: "chocolate", dulce2: "Galletas",dulce3: "Donas"} };
+console.log(objs);
+console.log(objs.numeros[0])
+console.log(objs.Carne);
+console.log(Object.keys(objs));
+console.log(Object.values(objs));
+objs.funcion();
+console.log(objs.dulces.dulce1)
+*/
+
+//Operadores
+let a = 2+5;
+console.log(a);
+let b = 5;
+b = 5*2;
+console.log(b);
+let c = 5%2;
+console.log(c);
+
+//condiciones
+console.log(9=="9");
+console.log(9==="9");
+console.log(9<=7);
+console.log(8>=7);
+console.log(8>=10);
+//Incre y decre
+
+let i = 2;
+console.log(i++);
+i = i+2;
+i*=3;
+console.log(i);
+
+//!||&&
+
+console.log(!true)
+console.log(!false)
+console.log((5==5)||(10<5));
+console.log((5==5)&&(10>5));
+
+function arroz () {
+    console.log("Quiero pan");
+    console.log("Quiero tacos");
+}
+arroz();
+
+let tacos = function (taco = "Requeson") {
+    console.log("taco de carne");
+    console.log(`taco de ${taco}`);
+    return"Esa va ser mi orden, pero en fa";
+}
+
+tacos();
+
+let miOrden = tacos()
+console.log(miOrden);
+
+    </script>
+</body>
+</html>

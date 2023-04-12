@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas y propiedas HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>¡Hey Boo!</td>
+                <td>Un abrazo</td>
+            </tr>
+            <tr>
+                <td>¡Ataque Boo!</td>
+                <td>Un premio</td>
+            </tr>
+            <tr>
+                <td>¡Ladrido paralizante Boo!</td>
+                <td>Una sobadita de panza</td>
+            </tr>
+            <tfoot>
+                <td></td>
+                <td>Total: Abrazo, premio, sobada de panza</td>
+            </tfoot>
+        </tbody>
+    </table>
+
+    <!-- ul significa: Lista no ordenada-->
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>¡Cuatro!</li>
+    </ul>
+    <!-- ol significa: Lista ordenada-->
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>¡Cuatro!</li>
+            <ol>
+                <li style="list-style: lower-alpha;">Uno</li>
+                <li style="list-style: lower-alpha;">Dos</li>
+                <li style="list-style: lower-alpha;">Tres</li>
+                <li style="list-style: lower-alpha;">¡Cuatro!</li>
+            </ol>
+    </ol>
+
+
+    <form action="/formulario" method="post">
+        <fieldset>
+        <legend>Coloca aqui tus datos para contactarme</legend>
+        <label for="Nombre">Nombre</label>
+        <input value="Nombre" type="text" id="Nombre" name="Nombre" placeholder="Coloca tu nombre aqui">
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input value="Apellido" type="text" id="Apellido" name="Apellido" placeholder="Coloca tu apellido aquí">
+        <br>
+        <label for="Comentario">Comentarios</label>
+        <textarea name="Comentario" id="Comentario" placeholder="Ingresa aquí tus comentarios" rows="10" cols="50">Comentarios XD</textarea>
+        <br>
+        <button type="button">Enviar</button>
+        <button type="reset">Enviar</button>
+        <button type="submit">Enviar</button>
+        </fieldset>
+        
+    </form>
+        <h1>XD</h1>
+        <h2>¡Bienvenidos!</h2>
+        <hr>
+        <h2>Las cosas como son...</h2>
+        <p>Como podras ver, mi blog puede estar algo <span style="color: red;">VACIO</span><br>Pero descuiden, poco a poco voy a ir llenandolo</p>
+         <!--Sigue así, Sebastián. Confia en tu camino de vida.-->
+        <a target="_blank" href="https://www.Google.com">Para ir a Google</a>
+        <img src="img/Saitama.jpg" width="400">
+
+
+</body>
+</html>

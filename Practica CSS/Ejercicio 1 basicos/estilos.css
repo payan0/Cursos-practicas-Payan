@@ -1,0 +1,201 @@
+h1 { 
+    font-size: 24px;
+}
+/*
+p {
+    color: blue;
+}
+*/
+#mala-practica {
+    color: white;
+   background-color:  red;
+    
+}
+
+.buena-practica {
+    color: white;
+    background-color: green;
+}
+
+/*selectores avanzados*/
+.hijo-di > li {
+    background-color: crimson;
+}
+
+.hijo-des  b {
+    background-color: crimson;
+}
+
+.hermano-gen ~ li {
+    background-color: crimson;
+}
+
+.hermano-adya + li {
+    background-color: crimson;
+}
+
+.selec-atri a[href] {
+    color: green;
+}
+
+.selec-atri a[target="_blank"] {
+    font-weight: bold;
+}
+
+.selec-atri a[href*="jonmircha"] {
+    font-size: 30px;
+}
+
+.selec-atri a[href^="https"] {
+    text-decoration: none;
+}
+
+.selec-atri a[href$=".com/"] {
+   background-color: black;
+}
+
+.selec-atri a[class~="cursos"] {
+    color: aqua;
+}
+
+.selec-atri a[class|="menu"] {
+    font-style: italic;
+}
+
+/*Selector Unviersal*/
+* {
+    font-family: sans-serif;
+}
+
+.selector-U *{
+    font-size: 24px;
+}
+
+
+/*pseudoclases*/ 
+
+.pseudo :disabled {
+    background-color: blue;
+}
+
+
+.pseudo :required {
+    background-color: aqua;
+}
+
+.pseudo *:hover {
+    background-color: red;
+}
+
+.navpseu a:visited {
+    color: black;
+}
+
+.navpseu a:hover {
+    color: pink;
+}
+
+#ejer:target {
+    background-color: chocolate;
+}
+
+
+/* pseudoclases lista*/
+
+.pseudolista li:first-child {
+    color: red;
+}
+
+.pseudolista li:last-child {
+    color: blue
+}
+
+.pseudolista li:nth-child(3) {
+    font-size: 32px;
+}
+
+.pseudolista li:nth-child(2n)
+{
+background-color: violet;
+}
+
+.pseudolista li:nth-child(3n + 1) {
+    color: green;
+}
+
+.pseudolista li:nth-child(even) {
+    font-weight: bold;
+}
+
+.pseudolista li:nth-child(odd) {
+    font-family: fantasy;
+}
+
+/*pseudoarticulos*/
+
+.pseudoarticulos p:first-of-type {
+    background-color: coral;
+}
+
+.pseudoarticulos p:last-of-type {
+    color: pink;
+}
+
+.pseudoarticulos p:nth-of-type(3) {
+    background-color: red;
+}
+
+.pseudoarticulos p:nth-of-type(2n) {
+    font-size: 24px;
+}
+ 
+.pseudoarticulos p:nth-of-type(2n + 1) {
+    font-weight: bold;
+}
+
+.pseudoarticulos div:hover {
+    color: violet;
+}
+
+.pseudoarticulos div:first-of-type {
+    color: yellow;
+}
+
+/*Pseudoelementos*/
+
+.clasea::before {
+    content: "😎";
+}
+
+.clasea::after {
+    content: "😐";
+}
+
+.precio::before {
+    content: "$";
+}
+
+.precio::after {
+    content: "USD";
+}
+
+.XD::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+.XD::first-line {
+    background-color: cornflowerblue;
+    
+}
+
+*::selection {
+    background-color: black;
+    color: green;
+}
+
+
+
+
+

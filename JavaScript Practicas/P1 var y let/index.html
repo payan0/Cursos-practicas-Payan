@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript practica 1 Var y Let</title>
+</head>
+<body>
+    <h1>Var y Let</h1>
+
+    <script>
+        var hey = ("Hey Mundo");
+        let que = ("Que hay Mundo");
+        console.log("Un hey global");
+        console.log("Que hay");
+        console.log(window);
+
+        console.log("****var****");
+        var taco = ("Taco de carne");
+        console.log("Taco de canasta de carne", taco);
+        {
+        var taco = ("Taco de mole")
+        console.log("Taco de canasta de mole", taco);
+        }
+        console.log("Taco de canasta de mole", taco);
+        console.log("****let****");
+        let hamburguesa = "Hamburguesa de queso";
+        console.log("Hamburguesaaa de quesito", hamburguesa);
+        {
+        let hamburguesa = "Hamburguesa tocino";
+        console.log("Hamburguesaaa de tocino", hamburguesa);
+        }
+        console.log("Hamburguesaaa de BBQ", hamburguesa);
+        
+    </script>
+</body>
+</html>

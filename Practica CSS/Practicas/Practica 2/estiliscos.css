@@ -1,0 +1,122 @@
+.XD li:first-child {
+    color: blue;
+}
+
+.XD li:last-child {
+    color: red;
+}
+
+.XD li:nth-child(3) {
+    background-color: red;
+}
+
+.XD li:nth-child(2n) {
+color: springgreen;
+}
+
+.XD li:nth-child(2n + 2) {
+    font-size: 30px;
+}
+
+.XD li:nth-child(odd) {
+    font-weight: bold;
+}
+
+.XD li:nth-child(even) {
+    background-color: violet;
+}
+
+
+.formulario *:hover {
+    color: green;
+}
+
+.formulario *:disabled {
+    color: red;
+    background-color: blue;
+}
+
+.formulario *:required {
+    background-color: gray;
+    color: red;
+}
+
+.titulo {
+    color: violet;
+    background-color: yellow;
+}
+
+.span {
+    background-color: aqua;
+}
+
+.XD-parte2 a[href] {
+    font-weight: bold;
+}
+
+.XD-parte2 a[target="_blank"] {
+    font-size: 24px;
+}
+
+.XD-parte2 a[href*="XD"] {
+    color: blue;
+}
+
+.XD-parte2 a[href^="#Dd"] {
+    background-color: aqua;
+}
+
+.XD-parte2 a[href$="4"] {
+    background-color: red;
+}
+
+.XD-parte2 a[class~="menu"] {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.XD-parte2 a[class|="menu"] {
+    color: green
+}
+
+.XD-el-regreso div:first-of-type {
+    color: green;
+}
+
+
+.XD-el-regreso div:last-of-type {
+    color: red;
+}
+
+.XD-el-regreso p:nth-last-of-type(2) {
+    background-color: gray;
+}
+
+.XD-el-regreso header {
+    color: blue;
+}
+
+.XD-el-regreso p:nth-last-of-type(3) {
+    background-color: yellow;
+}
+
+.XD-el-regreso *:hover {
+    color: pink;
+}
+
+.XD-el-regreso section:nth-last-of-type(1) {
+    color: blueviolet;
+    background-color: chartreuse;
+}
+
+.XD-el-regreso ::selection {
+    background-color: black;
+    color: red;
+}
+
+.span::before {
+    content: "😎"
+}
+
+.span::after {
+    content: "🤨"
+}

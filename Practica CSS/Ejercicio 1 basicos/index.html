@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CSS basico</title>
+</head>
+<body>
+    <h1 id="ejer">Esto es un ejercicio de selector basico</h1>
+
+    <article>
+    <h2>Parrafines comunes</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vel ex sint aut facilis corrupti voluptas eum optio ipsa, dicta quia itaque reiciendis doloribus? Natus dolore suscipit perspiciatis culpa mollitia?</p>
+    <p id="mala-practica">Aqui vamos con el ID de la mala practica</p>
+    <p class="buena-practica">Buena practica: class</p>
+    </article>
+
+    <article>
+        <ul class="hijo-di">
+            <li><b>A</b></li>
+            <li><b>E</b></li>
+            <li><b>I</b></li>
+            <li><b>O</b></li>
+            <li><b>U</b></li>
+        </ul>
+        <ul class="hijo-des">
+            <li><b>A</b></li>
+            <li><b>E</b></li>
+            <li><b>I</b></li>
+            <li><b>O</b></li>
+            <li><b>U</b></li>
+        </ul>
+        <ul>
+            <li><b>A</b></li>
+            <li class="hermano-gen"><b>E</b></li>
+            <li><b>I</b></li>
+            <li><b>O</b></li>
+            <li><b>U</b></li>
+        </ul>
+        <ul>
+            <li><b>A</b></li>
+            <li class="hermano-adya"><b>E</b></li>
+            <li><b>I</b></li>
+            <li><b>O</b></li>
+            <li><b>U</b></li>
+        </ul>
+    </article>
+
+    <nav class="selec-atri">
+        <ul>
+            <li><a href="https://jonmircha.com/" target="_blank">Inicio</a></li>
+            <li><a class="menu item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+            <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+            <li><a class="menu-item notas button" href="http://jonmircha.com/mentoria" target="_blank">Notas</a></li>
+            <li><a href="https://jonmircha.com/hola" target="_blank">CV</a></li>
+            <li><a class="menu-item cursos button" href="https://www.youtube.com/jonmircha" target="_blank">Ahora</a></li>
+            <li><a href="index.html#temario-css">Regresar al temario</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <article id="selec-U">
+        <ul>
+            <li><b>A</b></li>
+            <li><b>E</b></li>
+            <li><b>I</b></li>
+            <li><b>O</b></li>
+            <li><b>U</b></li>
+        </ul>
+    </article>
+    <hr>
+    <article id="pseudoclass">
+    <form class="pseudo" action="">
+        <input type="text" name="nombre" placeholder="el nombre" required>
+        <br>
+        <input type="email" name="correo" placeholder="el correo" required>
+        <br>
+        <input type="submit">
+        <input type="submit" disabled>
+    </form>
+    <nav class="navpseu">
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#4">4</a>
+    </nav>
+</article>
+<article id="pseudoclases-lista">
+    <ol class="pseudolista">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+        <li>Siete</li>
+        <li>ocho</li>
+        <li>Nueve</li>
+        <li>Diez</li>
+        <li>Once</li>
+        <li>Doce</li>
+    </ol>
+<article class="pseudoarticulos">
+<p>Esto es p</p>
+<div>Esto es div</div>
+<p>Esto es p</p>
+<section>esto es section</section>
+<p>Esto es p</p>
+<div>esto es div</div>
+<p>Esto es p</p>
+<footer>El footer</footer>
+</article>
+<hr>
+<article id="pseudoelementos">
+<p> <i>Saitama Echo <span class="clasea">Saitama heroe clase A</span> <span class="precio">500</span></i> </p>
+<p class="XD">Las XD son el mejor simbolo para decir que te estas cagando de risa en linea... XD</p>
+</article>
+<footer>
+    <a href="#ejer">Top</a>
+</footer>
+</body>
+</html>

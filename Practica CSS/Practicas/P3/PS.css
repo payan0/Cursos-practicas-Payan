@@ -1,0 +1,196 @@
+#p {
+    color: orange;
+}
+
+.pclase {
+    color: pink;
+}
+
+
+* {
+    font-family: sans-serif;
+}
+
+.directo > li {
+    background-color: blue;
+    color: red;
+} 
+
+
+.descendiente b {
+    background-color: pink;
+    color: violet;
+}
+
+.general ~ li {
+    color: green;
+    background-color: blue;
+}
+
+.adyacente + li {
+   color: blueviolet;
+   background-color: gray;
+}
+
+/*Selectores atributos*/
+.selectores-atributos a[href] {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.selectores-atributos a[target="_blank"] {
+    color: brown;
+}
+
+.selectores-atributos a[href*="jon"] {
+    background-color: aqua;
+}
+
+.selectores-atributos a[href^="https"] {
+    font-size: 24px;
+}
+
+.selectores-atributos a[href$=".com/"] {
+    font-weight: bold;
+}
+
+.selectores-atributos a[class~="menu"] {
+    font-size: 40px;
+}
+
+.selectores-atributos a[class|="menu"] {
+    color: blue;
+}
+
+
+.form-pseudoclases *:required {
+    background-color: blue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+    color: red;
+}
+
+.form-pseudoclases *:valid {
+    background-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    background-color: red;
+}
+
+.menu-pseudoclases a:visited {
+    color: brown;
+}
+
+.menu-pseudoclases a:link {
+    color: red;
+}
+
+.menu-pseudoclases a:hover {
+    color: black
+}
+
+.pclass:hover {
+    font-size: 30px;
+}
+
+.heroes li:first-child {
+    color: blue;
+}
+
+.heroes li:last-child {
+    color: red;
+}
+
+
+.heroes li:nth-child(4) {
+    color: yellow;
+    background-color: crimson;
+}
+
+
+.heroes li:nth-child(3n) {
+    color: green
+}
+
+.heroes li:nth-child(4n + 1) {
+    color: orange
+}
+
+.heroes li:nth-child(even) {
+    background-color: aqua;
+}
+
+.heroes li:nth-child(odd) {
+    background-color: darkred;
+}
+
+.articulos p:first-of-type {
+    color: red;
+}
+
+.articulos p:last-of-type {
+    color: blue;
+}
+
+.articulos p:nth-of-type(2) {
+    color: green
+}
+
+.articulos p:nth-of-type(3) {
+    color: violet;    
+}
+
+.articulos :not(p) {
+    background-color: blue;
+    color: red;
+}
+
+.clasea::before {
+    content: "😀";
+}
+
+.clasea::after {
+    content: "🤨";
+}
+
+.precio::before {
+    content: "$";
+}
+
+.precio::after {
+    content: "USD";
+}
+
+.elemento::first-letter {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+
+.elemento::first-line {
+    color: red;
+}
+
+.elemento::selection {
+    background-color: yellow;
+    color: blue;
+}
+
+*::selection {
+   background-color: black;
+   color: green;
+}
+
+.input::placeholder {
+    color: red;
+    background-color: black;
+}
+
+
+
+
+
+
+

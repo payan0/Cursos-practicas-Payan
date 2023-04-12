@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul class="directo">
+      <li>Primavera</li>
+      <li>Otoño</li>
+      <li>Verano</li>
+      <li>Invierno</li>
+    </ul>
+    <ul class="descen">
+      <li><i>Primavera</i></li>
+      <li><i>Otoño</i></li>
+      <li><i>Verano</i></li>
+      <li><i>Invierno</i></li>
+    </ul>
+    <script>
+      /*
+      //var y let
+      console.log("var y let");
+
+        var hola = "Hola Mundo"
+        let hello = "Hello world"
+        console.log(hola);
+        console.log(hello);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hello);
+        //Ambito de bloque
+        //Esto es un bloque - comentario de una linea
+      
+        /*
+        Esto
+        es 
+        cometraio
+        varias
+        lineas
+        */
+
+        /*
+        console.log("********var******")
+        var musica = "Rock";
+        console.log("Variable Música antes del Bloque", musica);
+        {
+          var musica = "Pop";
+          console.log("Variable Música dentro del Bloque", musica);
+        }
+          console.log("Variable Música despues del Bloque", musica);
+
+          console.log("********let******")
+          let musica2 = "Rock";
+        console.log("Variable Música antes del Bloque", musica2);
+        {
+          let musica2 = "Pop";
+          console.log("Variable Música dentro del Bloque", musica2);
+        }
+          console.log("Variable Música despues del Bloque", musica2);
+        //Const
+        console.log("const");
+          let a;
+          const Pi = 3.1416;
+          //const NUEVE;
+          console.log(Pi)
+          //PI = 3.15;
+          
+          a = "Jaguar";
+          console.log(a)
+        
+        //Objeto y Arreglo
+        console.log("Objeto y arreglo");
+          
+        const objeto = {
+            nombre:"Pay", edad: 24 
+          };
+
+          const colores = ["blanco","negro","azul"];
+          console.log(objeto);
+          console.log(colores);
+
+          objeto.correo ="payancero@hotmail.com";
+          colores.push("anaranjado");
+          */
+
+          //Cadenas de Texto aka Strings
+          /*
+          let nombre = "Sebastián";
+          let apellido = "Ojeda";
+          let saludo = new String("Hola Mundo")
+          let lorem ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et quisquam optio sint repellendus, voluptatum dolorum illum consequatur iusto assumenda pariatur dolore nesciunt dolor veniam excepturi debitis temporibus laudantium ipsa."
+          console.log(nombre,apellido,saludo);
+          console.log(nombre.length,apellido.length,saludo.length,nombre.toUpperCase(),apellido.toLocaleLowerCase(),lorem.includes("dolor"),lorem.includes("Sebastián"),lorem.trim(),lorem.split(","));
+          */
+
+          /*
+          let nombre = "Payan";
+          let apellido = "Ojeda";
+          //Concatenación
+          let saludo = "Hola mi nombre es " + nombre + " " + apellido + "." 
+          console.log(saludo);
+
+          //Interpolción de variables
+          //Template String 
+          let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+          console.log(saludo2);
+
+          let ul = "   <ul><li>Primavera</li><li>Otoño</li><li>Verano</li><li>Invierno</li></ul>"
+          console.log(ul);
+
+          let ul2 = `  <ul class="directo">
+                       <li>Primavera</li>
+                       <li>Otoño</li>
+                       <li>Verano</li>
+                       <li>Invierno</li>
+                      </ul>`
+    ;
+
+    console.log(ul2);
+
+    let ul3 = "<ul>";
+
+    ul3 += "<li>Primavera</li>"; 
+    ul3 += "<li>Verano</li>";
+    ul3 += "<li>Otoño</li>";
+    ul3 += " <li>Invierno</li>s";
+    ul3 += "</ul>`";
+    console.log(ul3);                   
+      */
+    /*
+    //Números
+    let a = 2;
+    let b = new Number(1);
+    let c = 7.19; 
+    let d = "5.6";
+    console.log(a,b);
+    console.log(c.toFixed(1));
+    console.log(c.toFixed(5));
+    console.log(parseInt(c));
+    console.log(parseFloat(c));
+    console.log(typeof c, typeof d);
+    console.log(a + b);
+    console.log(c + parseInt(d));
+    console.log(c + parseFloat(d));
+    console.log(c + Number.parseInt(d));
+    console.log(c + Number.parseFloat(d));
+    */
+    
+    /*
+    //Booleanos
+
+    let verdadero = true;
+    let falso = false;
+    let v = Boolean(true);
+    let f = Boolean(false);
+    
+    console.log(verdadero, falso, v, f);
+    console.log(typeof verdadero, typeof falso);
+    console.log(Boolean(0));
+    console.log(Boolean(-7));
+    console.log(Boolean(""));
+    console.log(Boolean(" "));
+    
+    */
+
+    /*
+    //undefined, null y Nan
+  
+    //undefined indica que no se ha inicializado una variable y que el valor esta ausente
+    let indefinida; 
+    console.log(indefinida);
+    //null es un valor especial que indica la ausencia de un valor
+    let nulo = null;
+    console.log(null);
+    //NaN - Not a Number
+    let noEsUnNumero = "hola" * 3.7;
+    console.log(noEsUnNumero);
+    */
+
+    //Funciones
+
+    /*
+    Una función es un bloque de código, autocontenido, que se puede definir una vez y ejecutar en cualquier momento.
+    Opcionalmente, una función puede aceptar parámetros y devolver un valor.
+    
+    Las funciones en JavaScript son objetos, un tipo especial de objetos: 
+    
+    Se dice que las funciones son ciudadanos de primera clase porque pueden asignarse a un 
+    valor, y pueden pasarse como argumentos usarse como un valor de retorno
+    */
+    //Función declarada
+    
+    //Declaración de función 
+    /*
+    function estoEsUnaFuncion () {
+      console.log("Uno");
+      console.log("Dos");
+      console.log("Tres");
+    }
+    /*
+
+      //Invocación de función
+    /*estoEsUnaFuncion();
+    estoEsUnaFuncion();
+    estoEsUnaFuncion();
+    estoEsUnaFuncion(); */
+
+/*
+    function unaFuncionQueDevuelveValor() {
+      console.log("Uno");
+      return 19;
+      console.log("Dos");
+      console.log("Tres");
+      return "La función ha retornado una Cadena de texto";
+    }
+    //let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+    //console.log(valorDeFuncion);
+    
+    function saludar(nombre = "desconocido", edad = 0) {
+      console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+    };
+
+    //saludar("Payan", 24);
+    //saludar();
+
+    //funciones declaradas vs funciones expresadas
+    funcionDeclarada();
+
+    function funcionDeclarada () {
+      console.log("Esto es una funcion declarada puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada");
+    }
+
+    funcionDeclarada();
+
+    //Función anonima 
+    //funcionExpresada();
+
+    const funcionExpresada = function () {
+      console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá: Cannot access 'funcionExpresada' before initialization")
+    }
+
+    funcionExpresada();
+    */
+
+   //Arrays (arreglos)
+    /*
+    const a = [];
+    const b = [1, true, "Hola", ["A", "B", "C", [1,2,3]]];
+    console.log(a);
+    console.log(b);
+    console.log(b.length);  
+    console.log(b[2]);  
+    console.log(b[0]);  
+    console.log(b[3]);  
+    console.log(b[3][2]);  
+    console.log(b[3][3][0]);
+    
+    const c = Array.of("X","Y","Z",9,8,7  );
+    console.log(c);
+    
+    const d = Array(100).fill(false);
+    console.log(d);
+
+    const e = new Array();
+    console.log(e)
+
+    const f = Array(1,2,3,true,false);
+    console.log(f);
+
+    const colores = ["Rojo", "verde", "azul"];
+    console.log(colores);
+    
+    colores.push("Negro")
+    console.log(colores);
+
+    colores.pop();
+    console.log(colores);
+
+    colores.forEach(function (el,index) {
+      console.log(`<li id="${index}">${el}</li>`)
+    });
+    */
+
+    //Objetos
+    /*
+    const b = {
+    }
+    console.log(b);
+    
+    const c = new Object();
+    console.log(c);
+    /* Dentro de un objeto a las variables se les van a llamar atributo/propiedades
+     y a las funciones se les llama metodos */
+     /*
+    const pay = { nombre: "Sebastián", apellido: "Ojeda", edad: 24, pasatiempos: ["Correr","Jugar Videojuegos", "Programar"], soltero: true, contacto: {email: "payancero@hotmail.com", Facebook: "Ojeda Sebastián", Celular: "5580148547"}, saludar: function () {console.log(`Hola:D`)}, decirMiNombre:function () {console.log(`Hey, me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años. Me puedes contacar como ${this.contacto.Facebook} en Facebook.`)}};
+    console.log(pay);
+    console.log(pay["nombre"]);
+    console.log(pay["apellido"]);
+    console.log(pay.nombre); 
+    console.log(pay.apellido); 
+    console.log(pay.edad);
+    console.log(pay.soltero); 
+    console.log(pay.pasatiempos); 
+    console.log(pay.pasatiempos[1]); 
+    console.log(pay.contacto.Facebook); 
+    pay.saludar();
+    pay.decirMiNombre();
+
+    console.log(Object.keys(pay));
+    console.log(Object.values(pay));
+    console.log(pay.hasOwnProperty("nombre"));
+    console.log(pay.hasOwnProperty("nacimiento"));
+    */
+
+    //operadores
+   /*aritmeticos: + - * / % () */
+   /*
+   let a = 5 + (5 - 10) * 3;
+   let modulo = 5 % 2;
+
+   console.log(a);
+   console.log(modulo);
+   */
+
+   /* Relacionales
+   >, <, >=, <=, ==, ===, !=, !== */
+  /*
+   console.log(8 > 9);
+   console.log(9 > 8);
+   console.log(8 >= 9);
+   console.log(9 >= 8);
+   console.log(7 < 7);
+   console.log(7 <= 7);
+  */
+   /*
+   = 1 es igual a una asignacion de variable.
+   == 2 iguales es comparacion de valores.
+   === 3 iguales es comparacion de tipo de dato y de valor.
+  */
+  /*
+  console.log(7 == 7);   
+  console.log("7" == 7);
+  console.log(0==false);
+
+  console.log(7 === 7);   
+  console.log("7" === 7);
+  console.log(0===false);
+  */
+  /*Incremento y decremento */
+  /*
+  let i = 2;
+
+  console.log(i++);
+  //console.log(++i);
+
+  //i = i+2;
+  //i*=3
+
+  //opreador unario
+  i++;
+  i--;
+  ++i;
+  --i;
+  console.log(i);
+  */
+  /*Logicos 
+  !Not: Niega, lo que es verdadero lo vuelve falso.
+   ||Or: Cuando una de las dos condiciones este cumplida, es decir sea verdadera, Or se va a cumplir.
+   &&And: Se deben de tener las condiciones cumplidas, es decir verdaderas, para que And se valide.
+   */
+  /*
+    console.log(!true);
+    console.log(!false);
+    console.log((9===9)||("9"===9));
+    console.log((9===9)&&("9"===9));
+    console.log((9===9)&&("9"==="9"));
+    */
+    
+    
+   
+    </script>
+
+</body>
+</html>
