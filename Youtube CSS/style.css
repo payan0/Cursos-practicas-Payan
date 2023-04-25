@@ -243,3 +243,98 @@ font-family: sans-serif;
 .input-pseudoelementos::placeholder {
     color: green;
 }
+
+/* Agrupar selectores */
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+
+/* El Algoritmo de CSS: Es la forma en el que el navegador aplica los estilos al documento HTML. Es vital entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas.
+
+El algoritmo de CSS se puede dividir en 3 partes:
+
+La cascada
+
+La especificidad
+
+La Herencia
+
+La Cáscada es el mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden: 
+1) El Origen del codigo:
+   - El User Agent (los estilos por defecto del navegador)
+   - Personalizaciones del usuario}
+   - Los estilos del autor
+
+2) La Especificidad del selector
+3) Orden de Aparición
+
+La Especificidad es el peso que tiene un selector cuando hay conflictos de estilos. Se calcula de la siguiente forma:
+
+Etiquetas y pseudoelementos -------------- 0,0,0,1
+Clases, atributos y pseudoclases ------------ 0,0,1,0
+Identificadores ----------------- 0,1,0,0
+Estilos en línea ----------------- 1,0,0,0
+!important ------------------- Rompe la especificidad
+
+La Herencia, es la capacidad de un selector de obtener (heredar) los valores de sus ancestros 
+más cercanos, para aplicarla se usa el valor inherit, si queremos evitarla podemos asignar 
+otro valor o inicializar la propiedad en cuestión con el valor inicial
+*/
+
+blockquote#cita-marco.cita-marco {
+    background-color: lightsteelblue;
+}
+
+blockquote {
+    background-color: burlywood;
+}
+
+#cita-marco {
+    background-color: lightgreen;
+}
+
+blockquote.cita-marco {
+    background-color:  tomato;
+}
+
+.cita-marco {
+    background-color: cornflowerblue;
+}
+
+.cita-marco {
+    background-color: mediumaquamarine!important;
+}
+
+blockquote#cita-marco {
+    background-color: lightsalmon;
+}
+
+.cita-marco {
+    background-color: moccasin!important;
+    background-color: darkorange!important;
+    font-size: 32px;
+    border-style: dotted;
+    border-color: red;
+}
+
+.cita-marco :hover {
+    font-size: 20px;
+}
+
+.cita-marco cite {
+    background-color: pink;
+    background-color: inherit;
+    font-size: 24px;
+    font-size: initial;
+    border-style: inherit;
+    border-color: inherit;
+}
